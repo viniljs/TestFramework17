@@ -52,10 +52,10 @@
 					<suiteXmlFiles>
 						<suiteXmlFile>TestRunner.xml</suiteXmlFile>
 					</suiteXmlFiles>
-					<!-- <environmentVariables>
+					<environmentVariables>
 						<browser>${browser}</browser>
 						<env>${env}</env>
-					</environmentVariables> -->
+					</environmentVariables>
 				</configuration>
 			</plugin>
 		</plugins>

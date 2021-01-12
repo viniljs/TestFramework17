@@ -13,17 +13,18 @@ public class DriverFactory {
 	private WebDriver driver;
 	
 	public WebDriver getDriver(String browserName) throws Exception {
+		String local =System.getProperty("user.dir")
 		switch(browserName.toLowerCase()) {  
 		  case "chrome" : 
-				System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver",local+"\\drivers\\chromedriver.exe");
 		        driver =  new ChromeDriver();
 				break;
 		  case "firefox" : 
-				System.setProperty("webdriver.gecko.driver","C:\\drivers\\geckodriver.exe");
+				System.setProperty("webdriver.gecko.driver",local+"\\drivers\\geckodriver.exe");
 				driver =  new FirefoxDriver();
 				break;
 		  case "edge" : 	
-			  	System.setProperty("webdriver.edge.driver","C:\\drivers\\msedgedriver.exe");
+			  	System.setProperty("webdriver.edge.driver",local+"\\drivers\\msedgedriver.exe");
 				driver =  new EdgeDriver();
 				break;
 			default: 
