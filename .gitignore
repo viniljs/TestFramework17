@@ -1,0 +1,4 @@
+target/*
+TestReports*
+test-output/*
+debug*
